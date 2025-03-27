@@ -1,3 +1,7 @@
-import React from 'react';
-declare function RecruitmentHome(): React.JSX.Element;
+import { JSX, ReactNode } from "react";
+type NextPageWithLayout<P = object> = {
+    (props: P): JSX.Element;
+    getLayout?: (page: ReactNode) => ReactNode;
+};
+declare const RecruitmentHome: NextPageWithLayout;
 export default RecruitmentHome;

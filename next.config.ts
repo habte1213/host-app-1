@@ -9,9 +9,9 @@ const nextConfig = {
   webpack(config: any, options: any) {
     const { isServer } = options;
     const remotes = {
-      "auditing-remote": "auditing-remote@http://localhost:3002/_next/static/chunks/remoteEntry.js",
-      "hr-remote": "hr-remote@http://localhost:3003/_next/static/chunks/remoteEntry.js",
-      "recruitment-remote": "recruitment-remote@http://localhost:3004/_next/static/chunks/remoteEntry.js",
+      "auditing-remote": "auditing-remote@https://auditing-remote1.vercel.app//_next/static/chunks/remoteEntry.js",
+      "hr-remote": "hr-remote@https://hr-remote1.vercel.app//_next/static/chunks/remoteEntry.js",
+      "recruitment-remote": "recruitment-remote@https://recruitment-remotes1.vercel.app//_next/static/chunks/remoteEntry.js",
     };
 
     const federatedConfig : any = {
